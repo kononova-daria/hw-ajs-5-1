@@ -53,7 +53,7 @@ test('Создание Bowman', () => {
 
   const newCharacter = new Bowman(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
 
 test('Создание Swordsman', () => {
@@ -71,7 +71,7 @@ test('Создание Swordsman', () => {
 
   const newCharacter = new Swordsman(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
 
 test('Создание Magician', () => {
@@ -89,7 +89,7 @@ test('Создание Magician', () => {
 
   const newCharacter = new Magician(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
 
 test('Создание Undead', () => {
@@ -107,7 +107,7 @@ test('Создание Undead', () => {
 
   const newCharacter = new Undead(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
 
 test('Создание Zombie', () => {
@@ -125,7 +125,7 @@ test('Создание Zombie', () => {
 
   const newCharacter = new Zombie(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
 
 test('Создание Daemon', () => {
@@ -143,5 +143,5 @@ test('Создание Daemon', () => {
 
   const newCharacter = new Daemon(character, type);
 
-  expect(JSON.stringify(newCharacter)).toBe(JSON.stringify(expected));
+  expect(newCharacter).toEqual(expected);
 });
